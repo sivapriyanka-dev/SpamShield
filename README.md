@@ -57,3 +57,13 @@ Accuracy: 97.13%
 pip install -r requirements.txt
 python spam_classifier.py
 ```
+
+---
+
+## 👩‍💻 Author
+
+**Siva Priyanka**
+
+- GitHub: https://github.com/sivapriyanka-dev
+
+Passionate about Machine Learning, NLP, and building real-world AI projects 🚀
