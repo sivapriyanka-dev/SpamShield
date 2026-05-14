@@ -4,11 +4,8 @@ from django.shortcuts import render
 import pickle
 import re
 import string
-import nltk
 from nltk.corpus import stopwords
 import os
-
-nltk.download('stopwords')
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -21,7 +18,14 @@ with open(MODEL_PATH, "rb") as f:
 with open(VECTORIZER_PATH, "rb") as f:
     vectorizer = pickle.load(f)
 
-stop_words = set(stopwords.words('english'))
+try:
+    stop_words = set(stopwords.words('english'))
+except:
+    stop_words = {
+        'a', 'an', 'the', 'is', 'are', 'was', 'were',
+        'to', 'of', 'in', 'on', 'for', 'and', 'or',
+        'at', 'by', 'with'
+    }
 
 
 def clean_text(text):
