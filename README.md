@@ -42,12 +42,14 @@ Accuracy: 97.13%
 
 ## Results
 
-(Insert screenshots)
+<img width="759" height="585" alt="image" src="https://github.com/user-attachments/assets/b5e2b8c2-7ec3-46a6-9b33-0be92d13e2fb" />
+<img width="752" height="589" alt="image" src="https://github.com/user-attachments/assets/b625792c-ccfb-4cac-9c77-5affd5a1c243" />
+
 
 ## Example Predictions
 
-"Congratulations! You won ₹10000" → Spam
-"Hey where are you?" → Ham
+- "Congratulations! You won ₹10000" → Spam
+- "Hey where are you?" → Ham
 
 ## Run Locally
 
@@ -55,3 +57,13 @@ Accuracy: 97.13%
 pip install -r requirements.txt
 python spam_classifier.py
 ```
+
+---
+
+## 👩‍💻 Author
+
+**Siva Priyanka**
+
+- GitHub: https://github.com/sivapriyanka-dev
+
+Passionate about Machine Learning, NLP, and building real-world AI projects 🚀
