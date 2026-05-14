@@ -1,3 +1,4 @@
+import pickle
 import pandas as pd
 import re
 import string
@@ -130,3 +131,11 @@ preds = model.predict(vectorized)
 for msg, pred in zip(messages, preds):
     result = "Spam" if pred == 1 else "Ham"
     print(msg, "->", result)
+
+with open("model.pkl", "wb") as f:
+    pickle.dump(model, f)
+
+with open("vectorizer.pkl", "wb") as f:
+    pickle.dump(vectorizer, f)
+
+print("Model saved successfully")
